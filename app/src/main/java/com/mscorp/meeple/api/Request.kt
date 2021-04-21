@@ -1,7 +1,5 @@
 package com.mscorp.meeple.api
 
-import okhttp3.ResponseBody
-
 sealed class Request<out T> {
 
     data class Success<out T>(val value: T) : Request<T>()
